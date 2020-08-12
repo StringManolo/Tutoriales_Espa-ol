@@ -451,7 +451,7 @@ body.appendChild(vinculo);
 
 Lo habitual es crear los elementos que conocemos de antemano con HTML y los que pueden variar o solo van a existir en casos remotos con javascript.
 
-Los elementos tienen múltiples atributos que podemos editar o leer desde javascript. Uno de los más interesantes a la hora de inseccionar los elementos es outerHTML.
+Los elementos tienen múltiples atributos que podemos editar o leer desde javascript. Uno de los más interesantes a la hora de inspeccionar los elementos es outerHTML.
 
 Por ejemplo podremos ver como queda el body tras añadir el elemento creado desde javascript:
 ```
