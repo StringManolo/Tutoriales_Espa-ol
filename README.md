@@ -1,11 +1,11 @@
 # Iniciación Javascript
 
 ## Indice:
-+ ### 1. Un vistazo superficial.
-+ ### 2. Primeros Pasos.
-+ ### 3. Introducción al DOM. 
++ ### 0. Un vistazo superficial.
++ ### 1. Primeros Pasos.
++ ### 2. Introducción al DOM. 
 
-## Capítulo 1. Un vistazo superficial.  
+## Capítulo 0. Un vistazo superficial.  
   
 
 ### Qué es?
@@ -61,7 +61,7 @@ _Nota_: A continuación un resumen de que es cada cosa. No te preocupes si no lo
   Los objetos son agrupaciones de datos o funciones que están relacionados de alguna forma. Por ejemplo podemos hacer un objeto persona que va a tener variables como nombre, altura, edad... Y métodos como hablar, caminar, comer...
 
 
-## Capítulo 2. Primeros Pasos.  
+## Capítulo 1. Primeros Pasos.  
   
 #### Creando el documento:
   Antes de empezar a programar en javascript necesitas un documento HTML para indicarle al navegador que vamos a usar javascript:
@@ -384,7 +384,7 @@ vehiculo.acelerar = function() {
 ```
   
 
-## Capítulo 3. Introducción al DOM.  
+## Capítulo 2. Introducción al DOM.  
   
 El Document Object Model es un objeto de javascript incluido en los navegadores. Este objeto _document_ nos permite crear elementos como texto, imágenes, botones, hypervínculos, añadirlos al documento actual, obtenerlos, eliminarlos, escuchar eventos...  
   
