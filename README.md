@@ -1,13 +1,13 @@
-#Iniciación Javascript
+# Iniciación Javascript
 
 ### Qué es?
-  Es un lenguaje de programación de propósito general. Esto significa que puede usarse en programas para móvil, programas de windows, drones, sistemas aeroespaciales, parquímetros, sistemas de contabilidad... Pero donde cobra mayor trascendencia es en la web. Originalmente en páginas web, ahora también en el lado del servidor.
+  Es un lenguaje de programación de propósito general. Esto significa que puede usarse en programas para móvil, programas de windows, drones, sistemas aeroespaciales, parquímetros, sistemas de contabilidad... Pero donde cobra mayor trascendencia es en la web. Originalmente en páginas web, pero también en el lado del servidor.
 
 ### Para qué sirve?
-  Para hacer cualquier tipo de programa. Sobre todo haciendo funcionar las páginas web, donde html se usa para definir el contenido, css modificar y estilizar la apariencia y javascript se ocupa de "lo que hace" la web. Desde mostrar algo al pulsar un botón, hasta descargarse una web entera, obtener algo que nos interesa de ella, almacenarlo, mostrarlo, enviarlo...
+  Para hacer cualquier tipo de programa. Sobre todo haciendo funcionar las páginas web, donde html se usa para definir el contenido, css modifica y estiliza la apariencia y javascript se ocupa de "lo que hace" la web. Desde mostrar algo al pulsar un botón, hasta descargarse una web entera, obtener algo que nos interesa de ella, almacenarlo, mostrarlo, enviarlo...
 
 ### Qué conocimientos necesito?
-  Ninguno. Se usará html mínimo para crear un documento e indicar donde está el archivo con javascript.
+  Ninguno. Se usará html mínimo para crear un documento e indicar donde está el código con javascript.
   
 
 
@@ -23,30 +23,30 @@
   + Arrays.
   + Objetos.
 
-Nota: A continuación un resumen de que es cada cosa. No te preocupes si no lo entiendes todo ahora mismo o es demasiada información nueva o abstracta. Vas a ver ejemplos detallados de su uso que facilitaran asimilar los conceptos. 
+_Nota_: A continuación un resumen de que es cada cosa. No te preocupes si no lo entiendes todo ahora mismo o es demasiada información nueva o abstracta. Vas a ver ejemplos detallados de su uso que facilitaran asimilar los conceptos. 
 
 ###### Expresiones o sentencias:
-  Son lineas de código que sirven para expresar una acción o un contenido. Por ejemplo 1 + 3; es una expresión que suma dos números. El punto y coma sirve para indicar el final de una expresión. 
+  Son lineas de código que sirven para expresar una acción o un contenido. Por ejemplo _1 + 3;_ es una expresión que suma dos números. El punto y coma sirve para indicar el final de una expresión. 
 
 ###### Variables:
-  Son contenedores para guardar algo que vamos a querer utilizar más tarde. Por ejemplo var resultado = 1 + 3; nos almacenará 4 dentro de una variable a la que pusimos de nombre resultado. Hay distintos tipos de datos y contenedores.
+  Son contenedores para guardar algo que vamos a querer utilizar más tarde. Por ejemplo _var resultado = 1 + 3;_ nos almacenará 4 dentro de una variable a la que pusimos de nombre resultado. Hay distintos tipos de datos y contenedores.
 
 ###### Operadores: 
-  Sirven para realizar operaciones de todo tipo. Tenemos los operadores matemáticos básicos pero también tenemos algunos otros útiles como el menor o igual que < el de asignación = o el de comparación == entre otros muchos.
+  Sirven para realizar operaciones de todo tipo. Tenemos los operadores matemáticos básicos pero también tenemos algunos otros útiles como el menor o igual que _<=_ el de asignación _=_ o el de comparación _==_ entre otros muchos.
 
 ###### Condicionales:
-  Sirven para realizar una acción cuando se cumpla la condición que le indiquemos. Ejemplo if (resultado == 4) se cumplirá si la variable redultado es igual a 4. Lo veremos en más detalle.
+  Sirven para realizar una acción cuando se cumpla la condición que le indiquemos. Ejemplo _if (resultado == 4)_ se cumplirá si la variable resultado es igual a 4. Lo veremos en más detalle.
 
 ###### Bucles:
-  Sirve para poder realizar una acción en bucle, es decir, de forma repetida hasta alcanzar el resultado deseado. Ejemplo while (resultado == 4) se repetira en bucle la expresión que le indiquemos mientras la variable resultado sea igual a 4.
+  Sirven para poder realizar una acción en bucle, es decir, de forma repetida hasta alcanzar el resultado deseado. Ejemplo _while (resultado == 4)_ se repetira en bucle la expresión que le indiquemos entre corchetes mientras la variable resultado sea igual a 4.
 
 ###### Metodos y Funciones:
-  Los métodos y las funciones se utilizan para agrupar código designado para una tarea. Por ejemplo podemos agrupar un programa entero que haga la declaración de la renta y otro que mustre los datos de diversas empresas. De esta forma podremos llamar a todo el código para hacer la declaración de la renta de una forma sencilla sin tener que rescribirlo de cero cada vez que queramos hacer la declaración a una persona distinta. Al final nos quedara una función que podremos usar tal que: hacerDeclaración("Paco"); hacerDeclaración("Antonio"); ... Los métodos son prácticamente iguales.
+  Los métodos y las funciones se utilizan para agrupar código designado para una tarea. Por ejemplo podemos agrupar un programa entero que haga la declaración de la renta y otro que mustre los datos de diversas empresas. De esta forma podremos llamar a todo el código para hacer la declaración de la renta de una forma sencilla sin tener que rescribirlo de cero cada vez que queramos hacer la declaración a una persona distinta. Al final nos quedara una función que podremos usar tal que: _hacerDeclaración("Paco");_ _hacerDeclaración("Antonio");_ ... Los métodos son prácticamente iguales.
 
 ###### Arrays:
-  Los arrays son contenedores al igual que las variables, pero nos permiten almacenar varios datos y también variables. Ejemplo: var colores = ["rojo", "verde", "azul"];
+  Los arrays son contenedores al igual que las variables, pero nos permiten almacenar varios datos y también variables. Ejemplo: _var colores = ["rojo", "verde", "azul"];_
   Para acceder a ellos usaremos índices que empiezan a contar desde 0. Por ejemplo si quiero mostrar la palabra rojo:
-  alert(colores[0]);
+  _alert(colores[0]);_
  
 
 ###### Objetos:
