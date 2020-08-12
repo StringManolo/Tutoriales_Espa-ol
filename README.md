@@ -316,7 +316,7 @@ alert(inicial);
 
 En este caso substr acepta 2 números separados por comas. El primero nos permite seleccionar la posición desde la que empezar a obtener caracteres. El segundo número nos permite indicar cuantos caracteres vamos a obtener a partir de la posición que indicamos. En el ejemplo a partir de la letra 0, obtendremos 1 letra. Es decir de _paco_ obtendremos la _p_. Si quisiesemos obtener _ac_ haríamos _var letrasCentrales = nombre.substr(1, 2);_ es decir, desde el caracter _a_ obtenemos 2 letras. 
 
-Hay mucho métodos predefinidos en javascript y se puede encadenar. Por ejemplo si queremos mostrar la inicial de un nombre en mayúsculas podremos usar _substr(0, 1)_ y _toUpperCase()_ ejemplo:
+Hay muchos métodos predefinidos en javascript y se pueden encadenar. Por ejemplo si queremos mostrar la inicial de un nombre en mayúsculas podremos usar _substr(0, 1)_ y _toUpperCase()_ ejemplo:
 ```
 var nombre = prompt("Cómo te llamas?"):
 var inicial = nombre.substr(0, 1);
