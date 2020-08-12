@@ -428,7 +428,7 @@ var vinculo = document.getElementById("vinculoAGoogle1");
 
 O mediante una selección por consulta:
 ```
-var vinculo = documemt.querySelector("#vinculoAGoogle1");
+var vinculo = document.querySelector("#vinculoAGoogle1");
 ```
 
 Yo recomiendo la segunda forma porque permite seleccionar también por el nombre de la etiqueta(omitiendo el _#_), por clase(usando un _._), y por más atributos y selectores simplente cambiando el texto entre paréntesis. Por simplificar no es prioritario conocerlos todos ahora.
@@ -451,8 +451,32 @@ body.appendChild(vinculo);
 
 Lo habitual es crear los elementos que conocemos de antemano con HTML y los que pueden variar o solo van a existir en casos remotos con javascript.
 
+Los elementos tienen múltiples atributos que podemos editar o leer desde javascript. Uno de los más interesantes a la hora de inseccionar los elementos es outerHTML.
 
+Por ejemplo podremos ver como queda el body tras añadir el elemento creado desde javascript:
+```
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Ejemplo de outterHTML</title>
+</head>
+<body>
+<script>
+var vinculo = document.createElement("a");
+vinculo.href = "https://google.com/search?q=Tutoriales de HTML";
+vinculo.innerText = "Tutoriales de HTML en Google";
 
+var body = document.querySelector("body");
+body.appendChild(vinculo);
+
+alert(body.outerHTML);
+</script>
+</body>
+</html>
+```
+
+También hay eventos como click, load, error, ....
 
 
 
