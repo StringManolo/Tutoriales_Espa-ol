@@ -89,7 +89,7 @@ alert(1 + 3);
 </html>
 ```
 
-Asegúrate de guardar los cambios y abre el archivo con extensión tuArchivo.html en el navegador. Para ello puedes hacer click derecho y seleccionar abrir con ... Ahí deberás elegir Chrome, Mozilla, Edge, Internet Explorer, Safari, Opera... El explorador que tu tengas. Debes ver una ventana que muestre el número 4. Si no es así repite el proceso y asegúrate que todo está correcto.
+Asegúrate de guardar los cambios y abre el archivo con extensión tuArchivo.html en el navegador. Para ello puedes hacer click derecho y seleccionar abrir con ... Ahí deberás elegir Chrome, Mozilla, Edge, Internet Explorer, Safari, Opera... El explorador que tú tengas. Debes ver una ventana que muestre el número 4. Si no es así repite el proceso y asegúrate que todo está correcto.
 
 A parte de realizar operaciones también puedes mostrar texto si lo encierras entre comillas. Ejemplo:
 ```
@@ -127,9 +127,9 @@ Es un poco incómodo mostrar 4 alerts distintos y que el usuario necesite pulsar
 <body>
 <script>
 var resultado = 4;
-var saludo = "bienvenido a mi primer programa
+var saludo = "bienvenido a mi primer programa";
 var nombre = "Juan";
-alert("Hola " + nombre + " " + saludo + ".\n" + "Ya no necesito utilizar " + resultado + " alerts para mostrarte este texto";
+alert("Hola " + nombre + " " + saludo + ".\n" + "Ya no necesito utilizar " + resultado + " alerts para mostrarte este texto");
 </script>
 </body>
 </html>
