@@ -1,5 +1,10 @@
 # Iniciación Javascript
 
+## Indice:
++ ### 1. Un vistazo superficial.
++ ### 2. Primeros Pasos.
++ ### 3. Introducción al DOM. 
+
 ## Capítulo 1. Un vistazo superficial.  
   
 
