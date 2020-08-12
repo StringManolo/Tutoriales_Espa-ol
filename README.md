@@ -402,6 +402,6 @@ Primero un ejemplo de un enlace definido en html:
 </html>
 ```
 
-El resultado es un link tal que (Tutoriales De HTML en Google)[https://google.com/search?q=Tutoriales de HTML]. Es un elemento sencillo que nos permite ir a la página o elemento de la página deseado.
+El resultado es un link tal que [Tutoriales De HTML en Google](https://google.com/search?q=Tutoriales%20de%20HTML). Es un elemento sencillo que nos permite ir a la página o elemento de la página deseado.
 
 
