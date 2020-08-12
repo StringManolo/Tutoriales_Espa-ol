@@ -402,6 +402,58 @@ Primero un ejemplo de un enlace definido en html:
 </html>
 ```
 
-El resultado es un link tal que [Tutoriales De HTML en Google](https://google.com/search?q=Tutoriales%20de%20HTML). Es un elemento sencillo que nos permite ir a la página o elemento de la página deseado.
+El resultado es un link tal que [Tutoriales de HTML en Google](https://google.com/search?q=Tutoriales%20de%20HTML). Es un elemento sencillo que nos permite ir a la página o elemento de la página deseado.
+  
+Dentro del atributo href pondremos el destino. Entre las etiquetas pondremos el texto que se va a mostrar.
+  
+Como puedes apreciar el elemento _<a>_  está entre las etiquetas body.
+Todo lo que pongas entre estas etiquetas excluyendo las etiquetas script y su contenido, será visible para el usuario.
+
+Estos elementos podremos obtenerlos en javascript para modificarlos y demás. Para facilitar su obtención, le vamos añadir el atributo _id_ para poder identificarlo desde javascript:
+```
+...
+<body>
+<a id="vinculoAGoogle1" href="https://google.com/search?q=Tutoriales de HTML">Tutoriales de HTML en Google</a>
+<script>
+
+</script>
+</body>
+</html>
+```
+
+Ahora podremos obtenerlo utilizando el _id_ de 2 formas. Con el método obtener elemento por id:
+```
+var vinculo = document.getElementById("vinculoAGoogle1");
+```
+
+O mediante una selección por consulta:
+```
+var vinculo = documemt.querySelector("#vinculoAGoogle1");
+```
+
+Yo recomiendo la segunda forma porque permite seleccionar también por el nombre de la etiqueta(omitiendo el _#_), por clase(usando un _._), y por más atributos y selectores simplente cambiando el texto entre paréntesis. Por simplificar no es prioritario conocerlos todos ahora.
+
+
+La otra forma de crear un elemento es hacerlo desde javascript y añadirlo entre las etiquetas body:
+```
+...
+<script>
+var vinculo = document.createElement("a");
+vinculo.href = "https://google.com/search?q=Tutoriales de HTML";
+vinculo.innerText = "Tutoriales de HTML en Google"
+
+var body = document.querySelector("body");
+body.appendChild(vinculo);
+</script>
+</body>
+</html>
+```
+
+Lo habitual es crear los elementos que conocemos de antemano con HTML y los que pueden variar o solo van a existir en casos remotos con javascript.
+
+
+
+
+
 
 
