@@ -13,7 +13,7 @@
 
 ## Programación General.
 
-  Javascript y la mayoría de lenguajes de uso actual utilizan varios eelementos que suelen ser comunes entre ellos:
+  Javascript y la mayoría de lenguajes de uso actual utilizan varios elementos que suelen ser comunes entre ellos:
   + Expresiones o sentencias.
   + Variables.
   + Operadores.
@@ -186,7 +186,7 @@ alert(saludo + nombre + postSaludo);
 
 El condicional if tiene una condición que va entre paréntesis y lo que queramos que pase si se cumple la condición va entre corchetes. También usamos el operador and __&&__ que sirve para añadir más de una condición que se tiene que cumplir.
 
-Ahora vamos a hacer un programa que pida un contraseña, si se cumple la condición, es decir si se puso la contraseña correcta mostraremos un texto indicándolo, y en caso contrario mostraremos otro distinto.
+Ahora vamos a hacer un programa que pida una contraseña, si se cumple la condición, es decir si se puso la contraseña correcta mostraremos un texto indicándolo, y en caso contrario mostraremos otro distinto.
 
 ```
 var contraseña = "abc123";
@@ -201,7 +201,7 @@ if (contraseña == introducida) {
 
 La palabra clave else sirve para poner código que se ejecute cuando no se cumpla la condición del if.
 
-Este programa tiene un problema, y es que si queremos que el usuario tenga 10 intentos, tendrá que abrir la página 10 veces  o tendremos que pegar 10 veces el código. No parece algo tan malo, pero y si le quisiésemos dar 1000 intentos? Sería una locura copiar y pegar tanto y el srchivo ocuparía mucho espacio. Para evitar esto tenemos los bucles.
+Este programa tiene un problema, y es que si queremos que el usuario tenga 10 intentos, tendrá que abrir la página 10 veces  o tendremos que pegar 10 veces el código. No parece algo tan malo, pero y si le quisiésemos dar 1000 intentos? Sería una locura copiar y pegar tanto y el archivo ocuparía mucho espacio. Para evitar esto tenemos los bucles.
 
 ### Los bucles.
 
@@ -215,7 +215,7 @@ while (contraseña != introducida) {
 }
 ```
 
-Aquí usamos el operador __desigual a__ en la condición. Es decir mientras la contraseña sea desigual a la introducida, ejecuta el código entre corchetes. Como ves __var__ solo es necesario utilizarlo para crear la variable, Después se puede omitir.
+Aquí usamos el operador __desigual a__ en la condición. Es decir mientras la contraseña sea desigual a la introducida, ejecuta el código entre corchetes. Como ves __var__ solo es necesario utilizarlo para crear la variable, después se puede omitir.
 
 Otro bucle de uso muy amplio es el for, que se puede ver de varias formas. Solo vamos a ver la forma clásica que en lugar de utilizar un condicional usa 3 expresiones. Es común su uso para contar o hacer acciones un determinado número de veces:
 ```
@@ -279,13 +279,87 @@ A lo largo del tiempo podríamos hacer funciones y almacenarlas en un archivo pa
 
 ### Arrays.
 
+  En lugar de retornar la cadena de texto, nos puede ser de interes separar los datos para acceder a ellos de forma individual:
+```
+var datosDeFamiliar = [nombre, edad, sexo, estadoCivil];
+```
+
+Así nos es posible tener todos los datos en un solo lugar y a la vez poder acceder a ellos individualmente:
+```
+alert(datosDeFamiliar);
+alert("Hola " + datosDeFamiliar[0] + " estás " + datosDeFamiliar[3] + " eres " + datosDeFamiliar[2] + " y tienes " + datosDeFamiliar[1] + " años.");
+```
+
+### Métodos.
+
+Qué pasa si queremos mostrar solo la inicial del nombre? Para ello javascript al igual que con alert y prompt, nos da un método llamado _substr_ cuya finalidad es a partir de un texto formar otro. Por ejemplo a partir del nombre Paco podremos obtener la P. Los métodos tienen una diferencia con las funciones, y es que estos son específicos de un objeto. Esto significa que no podemos crear un subtexto de un número, porque como es obvio un número no es un texto. Como ya vimos en ejemplos anteriores, el texto va entre comillas, mientras que los números no.
+Veamos un ejemplo del método substr:
+```
+var nombre = "paco";
+var inicial = nombre.substr(0, 1);
+alert(inicial);
+```
+
+En este caso substr acepta 2 números separados por comas. El primero nos permite seleccionar la posición desde la que empezar a obtener caracteres. El segundo número nos permite indicar cuantos caracteres obtenedetros a partir de la posición que indicamos. En el ejemplo a partir de la letra 0, obtendremos 1 letra. Es decir de _paco_ obtendremos la _p_. Si quisiesemos obtener _ac_ haríamos _var letrasCentrales = nombre.substr(1, 2);_ es decir, desde el caracter _a_ obtenemos 2 letras. 
+
+Hay mucho métodos predefinidos en javascript y se puede encadenar. Por ejemplo si queremos mostrar la inicial de un nombre en mayúsculas podremos usar _substr(0, 1)_ y _toUpperCase()_ ejemplo:
+```
+var nombre = prompt("Cómo te llamas?"):
+var inicial = nombre.substr(0, 1);
+var inicialEnMayuscula = inicial.toUpperCase();
+alert(inicialEnMayuscula);
+```
+
+También podemos encadenar métodos en una sola línea:
+```
+var nombre = prompt("Cómo te llamas?");
+var inicialEnMayuscula = nombre.substr(0, 1).toUpperCase();
+alert(inicialEnMayuscula);
+```
+
+Esto es posible debido a que javascript va evaluando las expresiones de izquierda a derecha remplazándolas por su resultado. Qué signifca esto? Significa que podemos simplificar mucho el código agrupando la funcionalidad en una sola linea, de tal forma que el ejemplo anterior también lo podemos hacer tal que:
+```
+alert(prompt("Cómo te llamas?").substr(0, 1).toUpperCase());
+```
+
+El navegador hará lo siguiente:
+  Hay paréntesis? Entonces evaluo lo que hay dentro:
+
+  Encuentro _prompt("Cómo te llamas?")_ ejecuto la función y la remplazo por el resultado quedando el código tal que:
+  _alert("paco".substr(0, 1).toUpperCase());_
+
+  Hay paréntesis? Entonces evaluo lo que hay dentro:
+
+  Encuentro _"paco".substr(0, 1)_ ejecuto el método y lo remplazo por el resultado quedando el código tal que:
+  _alert("p".toUpperCase());_
+
+  Hay paréntesis? Entonces evaluo lo que hay dentro:
+
+  Encuentro _"p".toUpperCase()_ ejecuto el método y lo remplazo por el resultado quedando el código tal que:
+  _alert("P");_
+
+  Como se puede apreciar ya no quedan expresiones que evaluar, asique el navegador pasará a hacer alert de "P".
 
 
+### Objetos.
 
+  Todo lo que hemos usado hasta ahora son objetos. Un objeto no es más que un contenedor en el que podemos guardar variables y funciones. Cuando una variable o una función pertenece a un objeto, nos referiremos a ellas como propiedades y métodos.
+Los objetos de momento los veremos como una forma sencilla de agrupar variables y funciones que tengan que ver entre sí. Para crear un objeto usaremos:
+```
+var vehiculo = {};
+```
 
+Para añadir una variable(propiedad) usaramos el operador _._ que ya vimos:
+```
+vehiculo.velocidadActual = 0;
+```
 
-
-
+Para añadir una función(método) también usaremos el mismo operador, pero asignaremos una función sin nombre:
+```
+vehiculo.acelerar = function() {
+  vehiculo.velocidadActual += 1;
+};
+```
 
 
 
