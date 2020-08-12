@@ -381,10 +381,27 @@ vehiculo.acelerar = function() {
 
 ## Capítulo 3. Introducción al DOM.  
   
-El Document Object Model es un objeto de javascript incluido en los navegadores. Este objeto _document_ nos permite crear elementos como texto, imágenes, botones, hypervínculos, añadirlos al documento actual, obtenerlos, eliminarlos, escuchar eventos...
+El Document Object Model es un objeto de javascript incluido en los navegadores. Este objeto _document_ nos permite crear elementos como texto, imágenes, botones, hypervínculos, añadirlos al documento actual, obtenerlos, eliminarlos, escuchar eventos...  
+  
+Principalmente hay 2 formas de obtener un elemento. Definiéndolo con código html y obteniendolo usando un selector. O bien creándolo directamente desde el código javascript.  
+  
+Primero un ejemplo de un enlace definido en html:
+```
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Ejemplo de un hypervínculo</title>
+</head>
+<body>
+<a href="https://google.com/search?q=Tutoriales de HTML">Tutoriales de HTML en Google</a>
+<script>
 
+</script>
+</body>
+</html>
+```
 
-
-
+El resultado es un link tal que [Tutoriales De HTML en Google](https://google.com/search?q=Tutoriales de HTML). Es un elemento sencillo que nos permite ir a la página o elemento de la página deseado.
 
 
