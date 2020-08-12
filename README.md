@@ -1,5 +1,8 @@
 # Iniciación Javascript
 
+## Capítulo 1. Un vistazo superficial.  
+  
+
 ### Qué es?
   Es un lenguaje de programación de propósito general. Esto significa que puede usarse en programas para móvil, programas de windows, drones, sistemas aeroespaciales, parquímetros, sistemas de contabilidad... Pero donde cobra mayor trascendencia es en la web. Originalmente en páginas web, pero también en el lado del servidor.
 
@@ -53,8 +56,8 @@ _Nota_: A continuación un resumen de que es cada cosa. No te preocupes si no lo
   Los objetos son agrupaciones de datos o funciones que están relacionados de alguna forma. Por ejemplo podemos hacer un objeto persona que va a tener variables como nombre, altura, edad... Y métodos como hablar, caminar, comer...
 
 
-## Primeros Pasos.
-
+## Capítulo 2. Primeros Pasos.  
+  
 #### Creando el documento:
   Antes de empezar a programar en javascript necesitas un documento HTML para indicarle al navegador que vamos a usar javascript:
 ```
@@ -374,7 +377,11 @@ vehiculo.acelerar = function() {
   vehiculo.velocidadActual += 1;
 };
 ```
+  
 
+## Capítulo 3. Introducción al DOM.  
+  
+El Document Object Model es un objeto de javascript incluido en los navegadores. Este objeto _document_ nos permite crear elementos como texto, imágenes, botones, hypervínculos, añadirlos al documento actual, obtenerlos, eliminarlos, escuchar eventos...
 
 
 
