@@ -50,7 +50,7 @@ _Nota_: A continuación un resumen de que es cada cosa. No te preocupes si no lo
  
 
 ###### Objetos:
-  Los objetos son agrupaciones de datos o funciones que están relacionados de alguna forma. Por ejemplo podemos hacer un objeto persona que va a tener variables como nombre, altura, edad... Y métodos como hablas, caminar, comer...
+  Los objetos son agrupaciones de datos o funciones que están relacionados de alguna forma. Por ejemplo podemos hacer un objeto persona que va a tener variables como nombre, altura, edad... Y métodos como hablar, caminar, comer...
 
 
 ## Primeros Pasos.
@@ -67,9 +67,23 @@ _Nota_: A continuación un resumen de que es cada cosa. No te preocupes si no lo
 </html>
 ```
 
-Solo son 3 etiquetas html. Dentro de las etiquetas script vas a escribir el código javascript que quieras.
-  
-Este código debes escribirlo y guardarlo en un archivo con cualquier editor de texto. Por ejemplo el notepad o bloc de notas de windows. Guárdalo como NombreDeMiDocumento.html 
+Solo son 3 etiquetas html. Dentro de las etiquetas script vas a escribir el código javascript que quieras. Si quieres utilizar acentos y caracteteres especiales debes añadir las etiquetas head y meta charset. Por lo general puedes usar el ejemplo anterior, o si lo prefieres añadir más datos quedando:
+```
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Título de la pestaña</title>
+</head>
+<body>
+Este texto lo veras en el documento.
+<script>
+
+</script>
+</body>
+</html>
+```
+Este código HTML debes escribirlo y guardarlo en un archivo con cualquier editor de texto. Por ejemplo el notepad o bloc de notas de windows. Guárdalo como NombreDeMiDocumento.html 
   
 Vamos a trabajar en este archivo que abriremos en el navegador para ver los resultados. De momento no hace nada. Si ponemos 1 + 3; hará la suma, pero no veremos el resultado porque no se lo indicamos. 
 Existen multitud de formas de ver los resultados, nosotros veremos la más básica de todas, la función alert. 
